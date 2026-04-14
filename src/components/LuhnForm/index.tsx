@@ -5,9 +5,10 @@ function LuhnForm() {
   return (
     <>
       <div className="luhn-form">
-        <Input />
-        <Input />
-        <Button />
+        <Input placeholder={'entrer les nombres ex.SIRET '} isReadOnly={false} labelName={'Code'} />
+        <Button buttonType={'submit'} buttonText={'Calculer'}/>
+        <Input placeholder={''} isReadOnly={true} labelName={'Check Digit'} />
+        <Input placeholder={''} isReadOnly={true} labelName={'Full Code'} />
       </div>
     </>
   )

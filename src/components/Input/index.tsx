@@ -1,11 +1,13 @@
 import './style.css' with { type: 'css' }
+import '../../../interfaces/main.ts'
+import type { inputInterface } from '../../../interfaces/main.ts'
 
-function Input() {
+function Input({ labelName, placeholder, isReadOnly}: inputInterface) {
   return (
     <>
       <div className="input-field">
-        <label>Test</label>
-        <input type={'text'}></input>
+        <label>{labelName}</label>
+        <input type='number' placeholder={placeholder} disabled={isReadOnly}></input>
       </div>
     </>
   )

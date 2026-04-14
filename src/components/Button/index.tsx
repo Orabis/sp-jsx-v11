@@ -1,9 +1,10 @@
 import './style.css' with { type: 'css' }
+import type { buttonInterface } from '../../../interfaces/main.ts'
 
-function Button() {
+function Button({buttonType,buttonText} :buttonInterface) {
   return (
     <>
-      <button>testButton</button>
+      <button type={buttonType}>{buttonText}</button>
     </>
   )
 }
