@@ -1,5 +1,4 @@
-import './style.css' with { type: 'css' }
-import type { buttonInterface } from '../../../interfaces/main.ts'
+import type { buttonInterface } from '@/interfaces/main.ts'
 
 function Button({ buttonType, buttonText }: buttonInterface) {
   return (

@@ -1,11 +1,11 @@
-import './style.css' with { type: 'css' }
-import '../../../interfaces/main.ts'
-import type { inputInterface } from '../../../interfaces/main.ts'
+import style from './style.module.css'
+import '@/interfaces/main.ts'
+import type { inputInterface } from '@/interfaces/main.ts'
 
 function Input({ labelName, placeholder, isReadOnly }: inputInterface) {
   return (
     <>
-      <div className="input-field">
+      <div className={style.inputField}>
         <label htmlFor={labelName}>{labelName}</label>
         <input
           type="number"

@@ -1,10 +1,10 @@
-import './style.css' with { type: 'css' }
-import Input from '../Input'
-import Button from '../Button'
+import style from './style.module.css'
+import Input from '@/components/Input'
+import Button from '@/components/Button'
 function LuhnForm() {
   return (
     <>
-      <div className="luhn-form">
+      <div className={style.luhnForm}>
         <Input placeholder={'entrer les nombres ex.SIRET '} isReadOnly={false} labelName={'Code'} />
         <Button buttonType={'submit'} buttonText={'Calculer'} />
         <Input placeholder={''} isReadOnly={true} labelName={'Check Digit'} />
