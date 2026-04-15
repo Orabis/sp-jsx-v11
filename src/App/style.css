@@ -1,4 +1,16 @@
 .header-name {
   text-align: center;
-  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+  text-align: center;
 }
