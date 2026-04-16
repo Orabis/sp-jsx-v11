@@ -11,7 +11,7 @@ function Input({ labelName, placeholder, isReadOnly, value, onChange }: inputInt
           id={labelName}
           value={value}
           onChange={onChange}
-          type="text"
+          type="number"
           name={labelName}
           placeholder={placeholder}
           disabled={isReadOnly}

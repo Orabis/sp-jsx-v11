@@ -1,9 +1,11 @@
 import type { buttonInterface } from '@/interfaces/main.ts'
 
-function Button({ buttonType, buttonText }: buttonInterface) {
+function Button({ buttonType, buttonText, onClick }: buttonInterface) {
   return (
     <>
-      <button type={buttonType}>{buttonText}</button>
+      <button onClick={onClick} type={buttonType}>
+        {buttonText}
+      </button>
     </>
   )
 }
